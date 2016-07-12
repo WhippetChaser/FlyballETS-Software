@@ -96,9 +96,10 @@ void LightsControllerClass::HandleStartSequence()
       {
          //Start sequence is not yet started, we need to schedule the lights on/off times
          
-         //Set schedule for RED light
-         _lLightsOnSchedule[1] = millis(); //Turn on NOW
-         _lLightsOutSchedule[1] = millis() + 1000; //keep on for 1 second
+         // *PEW* - Change the first light from red to yellow3 for consistency
+         //Set schedule for YELLOW3 light
+         _lLightsOnSchedule[6] = millis(); //Turn on NOW
+         _lLightsOutSchedule[6] = millis() + 1000; //keep on for 1 second
 
          //Set schedule for YELLOW1 light
          _lLightsOnSchedule[2] = millis() + 1000; //Turn on after 1 second
