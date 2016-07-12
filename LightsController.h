@@ -45,7 +45,8 @@ public:
       YELLOW1 = 32,  //74HC595 QF
       BLUE = 16,     //74HC595 QE
       YELLOW2 = 8,   //74HC595 QD
-      GREEN = 4      //74HC595 QC
+      GREEN = 4,     //74HC595 QC
+      YELLOW3 = 2    //74HC595 QB - *PEW* This allows us to drive light 1 as Yellow or Red
    };
    enum LightStates {
       OFF,
@@ -78,13 +79,15 @@ private:
    unsigned long _lLightsOnSchedule[6];
    unsigned long _lLightsOutSchedule[6];
 
-   Lights _byLightsArray[6] = {
+// *PEW* - Change array to use 7 values instead of 6 and add YELLOW3 to the array
+   Lights _byLightsArray[7] = {
       WHITE,
       RED,
       YELLOW1,
       BLUE,
       YELLOW2,
-      GREEN
+      GREEN,
+      YELLOW3
    };
 
    Lights _byDogErrorLigths[4] = {
