@@ -30,6 +30,12 @@
 #include <LiquidCrystal.h>
 #include <avr/pgmspace.h>
 
+// *PEW*  Add the "Adafruit_LEDBackpack.h" file to allow us to drive the external LED display for times.
+// This requires the Adafruit LED driver and Adafruit_GFX driver to be downloaded and placed in the Arduino
+// software Libraries folder for the system to compile correctly.
+#include "Adafruit_LEDBackpack.h"
+
+
 /*List of pins and the ones used:
    - D0: Reserved for RX
    - D1: Reserved for TX
