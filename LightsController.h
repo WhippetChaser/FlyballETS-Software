@@ -76,8 +76,8 @@ private:
 
    bool _bStartSequenceStarted = 0;
 
-   unsigned long _lLightsOnSchedule[6];
-   unsigned long _lLightsOutSchedule[6];
+   unsigned long _lLightsOnSchedule[7];
+   unsigned long _lLightsOutSchedule[7];
 
 // *PEW* - Change array to use 7 values instead of 6 and add YELLOW3 to the array
    Lights _byLightsArray[7] = {
